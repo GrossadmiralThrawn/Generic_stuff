@@ -1,0 +1,161 @@
+package generic_Package;
+
+public class generic_compare <T, U, V, W, X>
+{
+    private T private_t;
+    private U private_u;
+    private V private_v;
+    private W private_w;
+    private X private_x;
+    Boolean[] booleans;
+
+
+
+
+    public generic_compare (T t, U u)
+    {
+        private_t = t;
+        private_u = u;
+    }
+
+
+
+
+    /*public generic_compare (T t, U u, V v)
+    {
+        private_t = t;
+        private_u = u;
+        private_v = v;
+    }
+
+
+
+
+    public generic_compare (T t, U u, V v, W w)
+    {
+        private_t = t;
+        private_u = u;
+        private_v = v;
+        private_w = w;
+    }
+
+
+
+
+    public generic_compare (T t, U u, V v, W w, X x)
+    {
+        private_t = t;
+        private_u = u;
+        private_v = v;
+        private_w = w;
+        private_x = x;
+    }*/
+
+
+
+
+    private void generic_comparison_2()
+    {
+        booleans = new Boolean [1];
+
+
+        booleans[0] = private_t.equals(private_u);
+    }
+
+
+
+
+    /*private void generic_comparison_3()
+    {
+        booleans = new Boolean [3];
+
+
+        booleans[0] = private_t.equals(private_u);
+        booleans[1] = private_t.equals(private_v);
+
+        booleans[2] = private_u.equals(private_v);
+
+    }
+
+
+
+
+    private void generic_comparison_4()
+    {
+        booleans = new Boolean [6];
+
+
+        booleans[0] = private_t.equals(private_u);
+        booleans[1] = private_t.equals(private_v);
+        booleans[2] = private_t.equals(private_w);
+
+        booleans[3] = private_u.equals(private_v);
+        booleans[4] = private_u.equals(private_w);
+
+        booleans[5] = private_v.equals(private_w);
+
+    }
+
+
+
+
+
+    private void generic_comparison_5()
+    {
+        booleans = new Boolean [10];
+
+
+        booleans[0] = private_t.equals(private_u);
+        booleans[1] = private_t.equals(private_v);
+        booleans[2] = private_t.equals(private_w);
+        booleans[3] = private_t.equals(private_x);
+
+        booleans[4] = private_u.equals(private_v);
+        booleans[5] = private_u.equals(private_w);
+        booleans[6] = private_u.equals(private_x);
+
+        booleans[7] = private_v.equals(private_w);
+        booleans[8] = private_v.equals(private_x);
+
+        booleans[9] = private_w.equals(private_x);
+    }*/
+
+
+
+
+    public Boolean[] getBooleans2()
+    {
+        generic_comparison_2();
+
+        return booleans;
+    }
+
+
+
+
+    /*public Boolean[] getBooleans3()
+    {
+        generic_comparison_3();
+
+        return booleans;
+    }
+
+
+
+
+    public Boolean[] getBooleans4()
+    {
+        generic_comparison_4();
+
+        return booleans;
+    }
+
+
+
+
+    public Boolean[] getBooleans5()
+    {
+        generic_comparison_5();
+        return booleans;
+    }*/
+}
